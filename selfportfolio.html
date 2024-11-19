@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Java Developer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        #home {
+            background: url() no-repeat center center;
+            background-size: cover;
+            color: black;
+            height: 100vh;
+        }
+
+        #home h1, #home p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        #home img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 2px solid #333;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .contact-icons i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center justify-content-center">
+        <div class="text-center">
+            <img src="images/suren.jpg.jpeg" alt="Profile Picture">
+            <h1 class="display-3">Hi, I'm <span class="text-primary">Surendra Kumar Yadav</span></h1>
+            <p class="lead">Java Backend Developer | Backend Enthusiast | Problem Solver</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <p class="text-muted text-center">
+                I'm a Java developer with 2 years of experience in designing backend systems.
+                Experienced software developer specialist in Spring Boot with scalable capabilities.
+                 Having expertise in backend-end technologies like Java, Spring Boot, and JUnit. 
+                Our efforts are focused on constantly updating ourselves with the latest developments and best practices in Spring Boot development.
+                Proven ability to work with cross-functional teams to deliver the highest level of software solutions.
+            </p>
+            <h3 class="text-center mt-4">Key Skills:</h3>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-code fa-3x text-primary"></i>
+                    <h5>Java (Core & Advanced)</h5>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="fas fa-database fa-3x text-danger"></i>
+                    <h5>MySQL</h5>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="fas fa-code fa-3x text-danger"></i>
+                    <h5>Spring Boot</h5>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="fas fa-database fa-3x text-danger"></i>
+                    <h5>Hibernate</h5>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="fas fa-code fa-3x text-primary"></i>
+                    <h5>REST APIs</h5>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="fab fa-github fa-3x text-primary"></i>
+                    <h5>Git, GitHub</h5>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <!-- Project Card -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="images/Order.jpg" class="card-img-top" alt="Order Management System">
+                        <div class="card-body">
+                            <h3 class="card-title">Order Management System</h3>
+                            <p>
+                                A full-stack application for managing orders. Developed the backend using Spring Boot 
+                                and integrated with MySQL for database management.
+                            </p>
+                            <p><strong>Technologies:</strong> Java, Spring Boot, MySQL, Hibernate</p>
+                            <a href="https://github.com/surendra4321/SimpleGame" class="btn btn-primary" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards if needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Experience</h2>
+            <div class="job">
+                <h3 class="text-primary">Backend Developer</h3>
+                <h4>Technohunk Info Solutions Pvt Ltd</h4>
+                <p><i>October 2022 – Present</i></p>
+                <ul>
+                    <li>Troubleshooting and debugging backend issues, identifying and resolving bugs to enhance application performance by 50%.  </li>
+                    <li>Optimized database queries, reducing API response times by 30%.</li>
+                    <li>Implemented RESTful APIs and integrated third-party services.</li>
+                    <li>Design, develop, and maintain software applications, ensuring they meet quality and performance standards and involvement in software testing</li>
+                    <li>Code review and performance optimization identify the performance of the software application.</li>
+                    <li>Mentored emerging talent in the development team, fostering a 50% uplift in user satisfaction through meticulous cross-browser compatibility practices.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaboration or job opportunities.</p>
+            <ul class="list-unstyled">
+                <li class="contact-icons"><i class="fas fa-envelope"></i> Email: surendskyrk870@gmail.com</li>
+                <li class="contact-icons"><i class="fas fa-phone"></i> Mob no : 7987733602</li>
+                <li class="contact-icons"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/surendra-kumar-yadav-64b36521b/" target="_blank">LinkedIn Profile</a></li>
+                <li class="contact-icons"><i class="fab fa-github"></i> <a href="https://github.com/surendra4321" target="_blank">GitHub Profile</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Surendra Kumar Yadav. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
